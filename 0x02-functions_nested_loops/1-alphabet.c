@@ -1,15 +1,19 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * print_alphabet - Entry point
+ * Description: a function that prints the alphabet,
+ * in lowecase followed by a new line
+ * Return: void
  */
 void print_alphabet(void)
 {
-	char lc;
+	char letter = 'a';
 
-	for (lc = 'a'; lc <= 'z'; lc++)
+	while (letter <= 'z')
 	{
-		_putchar(lc);
+		_putchar(letter);
+		letter++;
 	}
 	_putchar('\n');
 }
